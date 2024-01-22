@@ -9,7 +9,6 @@ public class GameOfLife {
 
 	public static void main(String[] args) {
 		String fileName = args[0];
-		String fileName = "glider.dat";
 		// Uncomment the test that you want to execute, and re-compile.
 		// (Run one test at a time).
 		// test1(fileName);
@@ -206,7 +205,7 @@ public class GameOfLife {
 			}
 		}
 		StdDraw.show();
-		StdDraw.pause(10); 
+		StdDraw.pause(100); 
 	}
 }
 

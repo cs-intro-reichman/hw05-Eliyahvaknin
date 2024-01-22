@@ -11,7 +11,7 @@ public class GameOfLife {
 		String fileName = args[0];
 		// Uncomment the test that you want to execute, and re-compile.
 		// (Run one test at a time).
-		// test1(fileName);
+		//test1(fileName);
 		// test2(fileName);
 		// test3(fileName, 3);
 		play(fileName);
@@ -147,7 +147,7 @@ public class GameOfLife {
 	// Assumes that i is at least 1 and at most the number of rows in the board - 1. 
 	// Assumes that j is at least 1 and at most the number of columns in the board - 1. 
 	public static int count(int[][] board, int i, int j) {
-		int neighBors = 0;
+		int neighbors = 0;
 
 		for (int x = i - 1; x <= i + 1; x++) {
 
@@ -159,7 +159,7 @@ public class GameOfLife {
                 }
    
                 if (board[x][y] == 1) {
-                    neighBors++;
+                    neighbors++;
                 }
             }
         }
@@ -208,5 +208,6 @@ public class GameOfLife {
 		StdDraw.pause(100); 
 	}
 }
+
 
 

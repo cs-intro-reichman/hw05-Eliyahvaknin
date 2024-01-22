@@ -1,4 +1,4 @@
-/** /** 
+/** 
  *  Game of Life.
  *  Usage: "java GameOfLife fileName"
  *  The file represents the initial board.
@@ -208,4 +208,5 @@ public class GameOfLife {
 		StdDraw.pause(100); 
 	}
 }
+
 

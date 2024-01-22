@@ -69,30 +69,34 @@
 		int[][] board = new int[rows + 2][cols + 2];
 
 		String line = in.readLine();
-		int row = 0;
-		while (line==""){
-			row++;
+		if(!line.isEmpty()){
+			int row = 0;
+			while (line==""){
+				row++;
+				line = in.readLine();
+			}
+	
+			while(line!=""){
+	
+			int col=0;
+			while(line.charAt(col)=='.'){
+				col++;
+			}
+	
+			for (int i=col; i<line.length(); i++) {
+				if(line.charAt(i)=='x')
+				board[row+1][i+1] = 1;
+	
+			}
+	
 			line = in.readLine();
+			row++;
+	
+	
 		}
-
-		while(line!=""){
-
-		int col=0;
-		while(line.charAt(col)=='.'){
-			col++;
-		}
-
-		for (int i=col; i<line.length(); i++) {
-			if(line.charAt(i)=='x')
-			board[row+1][i+1] = 1;
 
 		}
 
-		line = in.readLine();
-		row++;
-
-
-	}
 
 		return board;
 	}
@@ -211,5 +215,7 @@
 		StdDraw.pause(100); 
 	}
 }
+
+
 
 
